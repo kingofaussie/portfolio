@@ -145,9 +145,12 @@ p {
   display: none;
 }
 
+<<<<<<< HEAD
 
 /* Home */
 
+=======
+>>>>>>> 967a7603b5f5bfe0b83808c477c8a14dd8f97e90
 #home {
   background: url('imgs/home_background.png')  center/cover no-repeat;
   padding: 40px;
@@ -482,6 +485,7 @@ p {
 }
 
 /* For below 768px screen width */
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
  .navbar__toggle-btn{
   display: block;
@@ -499,3 +503,46 @@ p {
   
 }
 
+=======
+@media screen and (max-width:768px) {
+  .navbar__toggle-btn {
+    display: block;
+
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+}
+
+
+>>>>>>> 967a7603b5f5bfe0b83808c477c8a14dd8f97e90
