@@ -68,7 +68,7 @@ h1 {
 font-size: var(--font-large);
 font-weight: var(--weight-bold);
 color: var(--color-black);
-margin: 16px 0px; /* 시계방향 */ 
+margin: 30px 0px; /* 시계방향 */ 
 }
 
 h2 {
@@ -132,10 +132,15 @@ display: flex;
 .navbar__menu__item {
 padding: 8px 12px;
 margin: 0 4px;
+color: var(--color-white);
 cursor: pointer;
 border-radius: var(--size-border-radius);
-border: 1px solid transparent;
 }
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
 
 .navbar__menu__item:hover {
 background-color: var(--color-dark-pink);
