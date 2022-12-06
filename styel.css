@@ -365,7 +365,15 @@ transition: all var(--animation-duration) ease-in;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+opacity: 1;
+transition: all var(--animation-duration) ease-out;
 }
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
+
 .project {
 position: relative;
 display: flex;
@@ -375,6 +383,10 @@ width: 280px;
 height: 250px;
 margin: 2px;
 background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -488,6 +500,28 @@ margin: 24px 0;
 transform: scale(1.1);
 color: var(--color-yellow);
 transition: all var(--animation-duration) ease-in;
+}
+
+/* Scroll */
+
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 30%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
