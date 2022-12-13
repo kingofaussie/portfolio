@@ -207,7 +207,7 @@ margin: auto;
 
 /* About */
 .about__majors {
-display: inline-flexbox; /* 원본은 세개여서 flex만 작성*/
+display: flex; /* 원본은 세개여서 flex만 작성*/
 justify-content: space-between;
 margin: 80px 0;
 
